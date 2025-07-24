@@ -32,18 +32,6 @@ CREATE TABLE users (
     country VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE reviews (
-	review_id INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT NOT NULL,
-    book_id INT NOT NULL,
-    rating SMALLINT NOT NULL CHECK (rating BETWEEN 1 AND 5),
-    text TEXT,
-    written_on DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(user_id),
-    FOREIGN KEY (book_id) REFERENCES books(book_id),
-    UNIQUE(user_id, book_id)
-);
-
 INSERT INTO authors(first_name, last_name) VALUES
 ('Paulo', 'Coelho'),
 ('Robert', 'Kiyosaki'),
@@ -60,8 +48,3 @@ INSERT INTO users(username, phone_number, email, password_hash, country) VALUES
 ('MohamedNabil500', '01011388226', 'mohameddnabill04@gmail.com', 'wxyz1234abcd', 'Egypt'),
 ('OmarSafwat500', '01020304050', 'omarsafwat03@gmail.com', 'aa12bb34cc56', 'Egypt'),
 ('AbdelkawyNasr123', '01000055566', 'abdonasr103@gmail.com', 'qwerty123456', 'Egypt');
-
-INSERT INTO reviews(user_id, book_id, rating, text) VALUES
-(1, 2, 5, 'Great book with rewarding financial advice.'),
-(2, 3, 4, 'Good novel and amazing narration.'),
-(3, 4, 2, 'Depressing novel.');
