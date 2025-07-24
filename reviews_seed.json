@@ -1,0 +1,37 @@
+[
+  {
+    "book_id": 1,
+    "reviewer": "Alice Johnson",
+    "rating": 5,
+    "comment": "An inspiring and beautifully written book!",
+    "created_at": { "$date": "2024-07-01T10:00:00Z" }
+  },
+  {
+    "book_id": 2,
+    "reviewer": "Bob Smith",
+    "rating": 3,
+    "comment": "Interesting read, but the pace was slow.",
+    "created_at": { "$date": "2024-07-05T15:30:00Z" }
+  },
+  {
+    "book_id": 2,
+    "reviewer": "Clara Lee",
+    "rating": 4,
+    "comment": "Great character development and plot twists.",
+    "created_at": { "$date": "2024-07-10T09:45:00Z" }
+  },
+  {
+    "book_id": 3,
+    "reviewer": "David Kim",
+    "rating": 2,
+    "comment": "Didn't live up to the hype for me.",
+    "created_at": { "$date": "2024-07-12T13:15:00Z" }
+  },
+  {
+    "book_id": 5,
+    "reviewer": "Ella Thompson",
+    "rating": 5,
+    "comment": "Absolutely loved every page!",
+    "created_at": { "$date": "2024-07-15T08:20:00Z" }
+  }
+]
