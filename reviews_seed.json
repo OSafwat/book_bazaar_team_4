@@ -21,6 +21,13 @@
     "created_at": { "$date": "2024-07-10T09:45:00Z" }
   },
   {
+    "book_id": 2,
+    "reviewer": "Mr. Potato Man",
+    "rating": 4,
+    "comment": "Spooky.",
+    "created_at": { "$date": "2024-07-10T09:45:00Z" }
+  },
+  {
     "book_id": 3,
     "reviewer": "David Kim",
     "rating": 2,
